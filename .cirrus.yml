@@ -10,8 +10,6 @@ task:
     - name: freebsd14-amd64
       freebsd_instance:
          image: freebsd-14-3-release-amd64-ufs
-    - name: freebsd13-amd64
-      freebsd_instance:
-         image: freebsd-13-5-release-amd64
   script:
+    - ls /usr/src
     - make
