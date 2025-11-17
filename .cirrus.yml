@@ -7,6 +7,9 @@ task:
     image_project: freebsd-org-cloud-dev
     platform: freebsd
   matrix:
+    - name: freebsd15-amd64
+      freebsd_instance:
+         image: freebsd-15-0-stable-amd64-ufs-20251113
     # 14.3 image does not have a src tree
     # - name: freebsd14-amd64
     #   freebsd_instance:
